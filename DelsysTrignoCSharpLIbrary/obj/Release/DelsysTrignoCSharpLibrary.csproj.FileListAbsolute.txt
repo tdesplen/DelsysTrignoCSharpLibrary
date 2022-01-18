@@ -1,0 +1,5 @@
+C:\A-Gear\DelsysTrignoCSharpLIbrary\DelsysTrignoCSharpLIbrary\bin\Release\DelsysTrignoCSharpLibrary.dll
+C:\A-Gear\DelsysTrignoCSharpLIbrary\DelsysTrignoCSharpLIbrary\bin\Release\DelsysTrignoCSharpLibrary.pdb
+C:\A-Gear\DelsysTrignoCSharpLIbrary\DelsysTrignoCSharpLIbrary\obj\Release\DelsysTrignoCSharpLibrary.dll
+C:\A-Gear\DelsysTrignoCSharpLIbrary\DelsysTrignoCSharpLIbrary\obj\Release\DelsysTrignoCSharpLibrary.pdb
+C:\A-Gear\DelsysTrignoCSharpLIbrary\DelsysTrignoCSharpLIbrary\obj\Release\DelsysTrignoCSharpLibrary.csprojResolveAssemblyReference.cache

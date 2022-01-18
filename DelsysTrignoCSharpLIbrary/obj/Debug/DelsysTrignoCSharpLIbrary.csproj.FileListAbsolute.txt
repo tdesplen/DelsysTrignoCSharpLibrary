@@ -1,0 +1,12 @@
+C:\A-Gear\DelsysTrignoCSharpLIbrary\DelsysTrignoCSharpLIbrary\obj\Debug\DelsysTrignoCSharpLIbrary.csprojResolveAssemblyReference.cache
+C:\A-Gear\DelsysTrignoCSharpLIbrary\DelsysTrignoCSharpLIbrary\bin\Debug\DelsysTrignoCSharpLIbrary.dll
+C:\A-Gear\DelsysTrignoCSharpLIbrary\DelsysTrignoCSharpLIbrary\bin\Debug\DelsysTrignoCSharpLIbrary.pdb
+C:\A-Gear\DelsysTrignoCSharpLIbrary\DelsysTrignoCSharpLIbrary\obj\Debug\DelsysTrignoCSharpLIbrary.dll
+C:\A-Gear\DelsysTrignoCSharpLIbrary\DelsysTrignoCSharpLIbrary\obj\Debug\DelsysTrignoCSharpLIbrary.pdb
+C:\A-Gear\DelsysTrignoCSharpLIbrary\DelsysTrignoCSharpLIbrary\bin\Debug\DelsysTrignoCSharpLibrary.XML
+D:\Dropbox\PhD\Source Code\Netherlands\A-Gear\DelsysTrignoCSharpLIbrary\DelsysTrignoCSharpLIbrary\bin\Debug\DelsysTrignoCSharpLibrary.XML
+D:\Dropbox\PhD\Source Code\Netherlands\A-Gear\DelsysTrignoCSharpLIbrary\DelsysTrignoCSharpLIbrary\bin\Debug\DelsysTrignoCSharpLibrary.dll
+D:\Dropbox\PhD\Source Code\Netherlands\A-Gear\DelsysTrignoCSharpLIbrary\DelsysTrignoCSharpLIbrary\bin\Debug\DelsysTrignoCSharpLibrary.pdb
+D:\Dropbox\PhD\Source Code\Netherlands\A-Gear\DelsysTrignoCSharpLIbrary\DelsysTrignoCSharpLIbrary\obj\Debug\DelsysTrignoCSharpLibrary.csprojResolveAssemblyReference.cache
+D:\Dropbox\PhD\Source Code\Netherlands\A-Gear\DelsysTrignoCSharpLIbrary\DelsysTrignoCSharpLIbrary\obj\Debug\DelsysTrignoCSharpLibrary.dll
+D:\Dropbox\PhD\Source Code\Netherlands\A-Gear\DelsysTrignoCSharpLIbrary\DelsysTrignoCSharpLIbrary\obj\Debug\DelsysTrignoCSharpLibrary.pdb

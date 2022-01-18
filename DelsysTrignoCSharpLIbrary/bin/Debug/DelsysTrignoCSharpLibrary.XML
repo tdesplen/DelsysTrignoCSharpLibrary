@@ -1,0 +1,157 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DelsysTrignoCSharpLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:DelsysTrignoCSharpLibrary.AccelerometerSample">
+            <summary>
+            The AccelerometerSample object is a container for accelerometer data samples.
+            </summary>
+        </member>
+        <member name="F:DelsysTrignoCSharpLibrary.AccelerometerSample.accXData">
+            <summary>
+            An array for one packet of accelerometer data (X direction).
+            </summary>
+        </member>
+        <member name="F:DelsysTrignoCSharpLibrary.AccelerometerSample.accYData">
+            <summary>
+            An array for one packet of accelerometer data (Y direction).
+            </summary>
+        </member>
+        <member name="F:DelsysTrignoCSharpLibrary.AccelerometerSample.accZData">
+            <summary>
+            An array for one packet of accelerometer data (Z direction)
+            </summary>
+        </member>
+        <member name="M:DelsysTrignoCSharpLibrary.AccelerometerSample.#ctor(System.Single[],System.Single[],System.Single[])">
+            <summary>
+            A constructor that initializes the internal arrays based on the data collected from the system.
+            </summary>
+            <param name="acc_x_data"> An array of floating point accelerometer values (X direction). </param>
+            <param name="acc_y_data"> An array of floating point accelerometer values (Y direction). </param>
+            <param name="acc_z_data"> An array of floating point accelerometer values (Z direction). </param>
+        </member>
+        <member name="T:DelsysTrignoCSharpLibrary.Driver">
+            <summary>
+            The Driver object is the main interface for interaction with the Delsys Trigno Wireless EMG system.
+            </summary>
+        </member>
+        <member name="M:DelsysTrignoCSharpLibrary.Driver.BeginSampling">
+            <summary> A method that will connect to the data servers, send the START command to the system and begin the data collection thread. </summary>
+        </member>
+        <member name="M:DelsysTrignoCSharpLibrary.Driver.Connect(System.String)">
+            <summary>
+            A method for initialzing the Loggers and connecting to the command server.
+            </summary>
+            <param name="URL"> The URL of the servers. </param>
+        </member>
+        <member name="M:DelsysTrignoCSharpLibrary.Driver.AccelerometerCollectionThread">
+            <summary>
+            A thread function that will collect both EMG and accelerometer data samples once the server begins to send them.
+            </summary>
+        </member>
+        <member name="M:DelsysTrignoCSharpLibrary.Driver.EMGCollectionThread">
+            <summary>
+            A thread function that will collect both EMG and accelerometer data samples once the server begins to send them.
+            </summary>
+        </member>
+        <member name="M:DelsysTrignoCSharpLibrary.Driver.Disconnect">
+            <summary>
+            A method to send the QUIT command to the server and close all connections to the system.
+            </summary>
+        </member>
+        <member name="M:DelsysTrignoCSharpLibrary.Driver.GetAccelerometerSample">
+            <summary>
+            A method that will return one AcclerometerSample from the queue.
+            </summary>
+            <returns> One DataSample object. </returns>
+        </member>
+        <member name="M:DelsysTrignoCSharpLibrary.Driver.GetEMGSample">
+            <summary>
+            A method that will return one EMGSample from the queue.
+            </summary>
+            <returns> One DataSample object. </returns>
+        </member>
+        <member name="M:DelsysTrignoCSharpLibrary.Driver.GetSamplingTime">
+            <summary>
+            Return the sampling time in milliseconds.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DelsysTrignoCSharpLibrary.Driver.IsConnected">
+            <summary>
+            A method that reveals the connection status of the driver with the system.
+            </summary>
+            <returns> True - connected, False - disconnected. </returns>
+        </member>
+        <member name="M:DelsysTrignoCSharpLibrary.Driver.IsStreaming">
+            <summary>
+            A method that reveals the status of the data collection between the driver and the server.
+            </summary>
+            <returns> True - streaming data, False - idle. </returns>
+        </member>
+        <member name="M:DelsysTrignoCSharpLibrary.Driver.NumberOfAccelerometerSamples">
+            <summary>
+            A method that reveals the numbers of accelerometer samples that are available from the driver.
+            </summary>
+            <returns> The number of samples available in the queue. </returns>
+        </member>
+        <member name="M:DelsysTrignoCSharpLibrary.Driver.NumberOfEMGSamples">
+            <summary>
+            A method that reveals the numbers of EMG samples that are available from the driver.
+            </summary>
+            <returns> The number of samples available in the queue. </returns>
+        </member>
+        <member name="M:DelsysTrignoCSharpLibrary.Driver.SendCommand(System.String)">
+            <summary>
+            A method for sending a command to the system.
+            </summary>
+            <param name="command"> A string containing the server command. </param>
+            <returns> A string containing the server response. </returns>
+        </member>
+        <member name="M:DelsysTrignoCSharpLibrary.Driver.StopSampling">
+            <summary>
+            A method that stops the data collection thread and sends a STOP command to the system.
+            </summary>
+        </member>
+        <member name="T:DelsysTrignoCSharpLibrary.EMGSample">
+            <summary>
+            The EMGSample object is a container for EMG data samples.
+            </summary>
+        </member>
+        <member name="F:DelsysTrignoCSharpLibrary.EMGSample.emgData">
+            <summary>
+            An array for one packet of accelerometer data (X direction).
+            </summary>
+        </member>
+        <member name="M:DelsysTrignoCSharpLibrary.EMGSample.#ctor">
+            <summary>
+            A constructor that initializes the internal arrays to 0.
+            </summary>
+        </member>
+        <member name="M:DelsysTrignoCSharpLibrary.EMGSample.#ctor(System.Single[])">
+            <summary>
+            A constructor that initializes the internal arrays based on the data collected from the system.
+            </summary>
+            <param name="emg_data"> An array of floating point EMG values. </param>
+        </member>
+        <member name="M:DelsysTrignoCSharpLibrary.Logger.Initialize(System.String)">
+            <summary>
+            A method that initializes the logger by opening a stream writer to the desired file.
+            </summary>
+            <param name="logFileName"> A string containing the filename. </param>
+        </member>
+        <member name="M:DelsysTrignoCSharpLibrary.Logger.Log(System.String)">
+            <summary>
+            A method to write a line to the log file.
+            </summary>
+            <param name="contents"> A string containing the data to be written to file. </param>
+        </member>
+        <member name="M:DelsysTrignoCSharpLibrary.Logger.Close">
+            <summary>
+            A method to close the log file.
+            </summary>
+        </member>
+    </members>
+</doc>
